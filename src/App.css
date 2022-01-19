@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+body{
+  background-color: #F2FFE9;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+background-color: #F2FFE9;
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+form{
+  width: 900px;
+  height: 500px;
+  background-color: #A6CF98;
+  border-radius:10px;
+  box-shadow: 0 0 0 .6em #557C55;
+  display:flex;
+  flex-direction:column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+input{
+  width: 280px;
+  height: 40px;
+  border-radius:7px;
+  border-style:none;
+  padding: 0;
+  color:#557C55;
+  background-color:#F2FFE9;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom:15px;
+}
+input:focus{
+  outline:solid #557C55;
+}
+.dark-btn{
+  width: 150px;
+  padding: 7px;
+  border-radius: 7px;
+  border:none;
+  background-color: #557C55;
+  color:#F2FFE9;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 10px;
+}
+.dark-btn:hover{
+  outline: 3px solid #F2FFE9;
+}
+.checkbox{
+  width: 20px;
+  height: 20px;
+}
+nav{
+  height: 100px;
+  background-color: #557C55;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-link{
+  list-style: none;
+  width: 50%;
+  display: inline;
+  font-size: 1.6rem;
 }
 
-.App-link {
-  color: #61dafb;
+.light-btn{
+  width: 150px;
+  padding: 7px;
+  border-radius: 7px;
+  border:none;
+  background-color: #F2FFE9;
+  color:#557C55;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 25px;
 }
+.light-btn:hover{
+  outline: 3px solid #DB6B97;
+}
+.errorMessage{
+  color:red;
+  margin: -10px 0 10px;
+}
+.spinner{
+  width: 50px;
+  display: block;
+  margin: 10px auto;
+}
+.joke{
+  font-size: 1.3rem;
+  margin: 100px;
+}
+h1{
+  text-align: center;
+  font-size: 2.9rem;
+  margin:10px;
+  font-weight:600;
+}
+.card{
+  width: 100%;
+  height: 400px;
+  display: flex row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:425px) {
+  form{
+    width: 350px;
+    height: 600px;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  .joke{
+    font-size: 1.2rem;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
