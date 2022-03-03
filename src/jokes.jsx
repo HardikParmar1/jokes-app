@@ -8,7 +8,7 @@ const [jokes , setJokes] =useState();
 const [loading, setLoading]=  useState();
 const getJoke = async ()=>{
   setLoading(true);
-  await axios.get('https://v2.jokeapi.dev/joke/Programming').then(
+  await axios.get('https://v2.jokeapi.dev/joke/Any').then(
   response => {
   setJokes(response.data.setup + "..........." +response.data.delivery);
   });
